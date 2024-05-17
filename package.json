@@ -1,0 +1,20 @@
+{
+  "name": "dns_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "start": "node server.js"
+  },
+  "author": "mostafa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "solc": "^0.8.25",
+    "web3": "^4.8.0"
+  }
+}
