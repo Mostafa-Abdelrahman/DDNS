@@ -2,7 +2,6 @@
     const {Web3} = require('web3');
     const fs = require('fs');
     const path = require('path');
-    const { stringify } = require('querystring');
 
     const app = express();
     app.use(express.json());
@@ -53,7 +52,7 @@
     
     app.post('/update', async (req, res) => {
         const { domain, ip } = req.body;
-    
+        console.log(domain,ip)
         try {
         const gasEstimate = await dnsContract.methods.updateDomain(domain, ip)
             .estimateGas({ from: web3.eth.defaultAccount });
@@ -67,7 +66,7 @@
     
     app.post('/transfer', async (req, res) => {
         const { domain, newOwner } = req.body;
-    
+        
         try {
         const gasEstimate = await dnsContract.methods.transferDomain(domain, newOwner)
             .estimateGas({ from: web3.eth.defaultAccount });
@@ -85,7 +84,7 @@
     // Delete a domain
     app.post('/delete', async (req, res) => {
     const { domain } = req.body;
-
+        console.log(domain)
     try {
         const result = await dnsContract.methods.deleteDomain(domain)
         .send({ from: web3.eth.defaultAccount });
