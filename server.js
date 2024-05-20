@@ -17,7 +17,7 @@
     let dnsContract;
     const deployDnsContract = async () => {
     const accounts = await web3.eth.getAccounts();
-    const defaultAccount = accounts[1];
+    const defaultAccount = accounts[3];
     web3.eth.defaultAccount = defaultAccount;
 
     dnsContract = new web3.eth.Contract(dnsAbi);
