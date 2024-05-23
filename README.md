@@ -108,9 +108,9 @@ This project is a decentralized domain name service (DNS) implemented on the Eth
         -Method: GET
         -Response: string[] (List of all registered domain names)
 #### Get Registration Fee
-        -URL: /domains
+        -URL: /fee
         -Method: GET
-        -Response: string[] (List of all registered domain names)
+        -Response: { fee: string }
 ## Running the Project
 ### 1- Smart Contract Deployment
 #### Compile and deploy the smart contract using Truffle:
