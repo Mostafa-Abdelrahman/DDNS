@@ -59,6 +59,74 @@ This project is a decentralized domain name service (DNS) implemented on the Eth
         -Update Domain: Tests the ability to update the IP address of a domain.
         -Transfer Domain: Tests the transfer of domain ownership.
         -Delete Domain: Tests the deletion of a domain.
+## API Server
+### Setup
+        -Framework: Express.js
+        -Blockchain Interaction: Web3.js
+        -Local Network: http://127.0.0.1:8545 (Ganache)
+### Endpoints
+#### Deploy Contract
+        -Deploys the DNS smart contract on server start.
+        -URL: N/A (Executed on server start)
+#### Register Domain
+        -URL: /register
+        -Method: POST
+        -Body Parameters:
+                -domain (string): The domain name to register.
+                -ip (string): The IP address associated with the domain.
+        -Response: { transactionHash: string }
+#### Update Domain
+        -URL: /update
+        -Method: POST
+        -Body Parameters:
+                -domain (string): The domain name to update.
+                -ip (string): The new IP address.
+        -Response: { transactionHash: string }
+#### Transfer Domain
+        -URL: /transfer
+        -Method: POST
+        -Body Parameters:
+                -domain (string): The domain name to transfer.
+                -newOwner (string): The new owner's address.
+        -Response: { transactionHash: string }
+#### Delete Domain
+        -URL: /delete
+        -Method: POST
+        -Body Parameters:
+                -domain (string): The domain name to delete.
+        -Response: { transactionHash: string }
+#### Get Domain Info
+        -URL: /domain/:name
+        -Method: GET
+        -Response:
+                -exists (bool): Whether the domain exists.
+                -owner (string): The owner's address.
+                -ip (string): The IP address.
+                -expirationDate (uint256): The expiration date (omitted in current implementation).
+#### Get All Domains
+        -URL: /domains
+        -Method: GET
+        -Response: string[] (List of all registered domain names)
+#### Get Registration Fee
+        -URL: /domains
+        -Method: GET
+        -Response: string[] (List of all registered domain names)
+## Running the Project
+### 1- Smart Contract Deployment
+#### Compile and deploy the smart contract using Truffle:
+        truffle compile
+        truffle migrate
+### 2- API Server
+#### Install dependencies:
+        npm install
+        truffle migrate
+#### Start the server:
+        node server.js
+#### The server will run on http://localhost:3000.
+### 3- Testing
+#### Run the tests using Truffle:
+        truffle test
+
 
 
 
