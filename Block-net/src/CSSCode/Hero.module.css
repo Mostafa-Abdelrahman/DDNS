@@ -1,0 +1,27 @@
+.searchBarContainer {
+    background: linear-gradient(135deg, #1f1c2c, #0c0b0e);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input {
+    background: rgba(255, 255, 255, 0.1);
+    color: #2a2323;
+    border: none;
+  }
+  
+  .input::placeholder {
+    color: rgba(34, 27, 27, 0.6);
+  }
+  
+  .searchButton {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .searchButton:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  }
+  

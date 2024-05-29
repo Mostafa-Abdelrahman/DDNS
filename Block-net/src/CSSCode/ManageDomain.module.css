@@ -1,0 +1,116 @@
+/* CSSCode/ManageDomain.module.css */
+.manageDomainContainer {
+    background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    color: #e5e5e5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid #555;
+    background: #2d2d2d;
+    color: #e5e5e5;
+  }
+  
+  .input::placeholder {
+    color: #999;
+  }
+  
+  .actionButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin: 5px;
+  }
+  
+  .deleteButton {
+    background: #e74c3c;
+  }
+  
+  .deleteButton:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+  }
+  
+  .transferButton {
+    background: #f1c40f;
+  }
+  
+  .transferButton:hover {
+    background: #f39c12;
+    transform: translateY(-3px);
+  }
+  
+  .updateButton {
+    background: #2ecc71;
+  }
+  
+  .updateButton:hover {
+    background: #27ae60;
+    transform: translateY(-3px);
+  }
+  
+  .formContainer {
+    margin-top: 20px;
+  }
+  
+  .backButton {
+    padding: 8px 16px;
+    background: #34495e;
+    border: none;
+    border-radius: 8px;
+    color: #e5e5e5;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .backButton:hover {
+    background: #2c3e50;
+  }
+  
+  .manageActionContainer {
+    background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+    padding:20px;  
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: #e5e5e5;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #555;
+    background: #2d2d2d;
+    color: #e5e5e5;
+  }
+  
+  .input::placeholder {
+    color: #999;
+  }
+  
