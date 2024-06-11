@@ -1,5 +1,5 @@
 
-# DNS Smart Contract Documentation
+# DNS Blockchain Smart Contract Documentation
 ## Live Demo : https://ddns-6cpl.vercel.app/
 ## Overview
 
